@@ -1,35 +1,32 @@
 playing = input("Do you want to play? ")
-if playing.lower() =="yes":
-    print("game starts :)")
+if playing.lower() !="yes":
+    print("Maybe next time 👋")
+    exit()
+else:
+    print("Game starts 🙂")
+
 score=0
 
-answer=input("What CPU stands for? ")
-if answer.lower() =="central processing unit":
-    print("Correct")
-    score+=1
-else:
-    print("Incorrect")
+questions={
+    "What CPU stands for?":"central processing unit",
+    "What GPU stands for? ":"graphics processing unit",
+    "What RAM stands for? ":"random access memory",
+    "What ROM stands for? ":"read only memory"
+    
+}
+score = 0
 
-answer=input("What GPU stands for? ")
-if answer.lower() =="graphics processing unit":
-    print("Correct")
-    score+=1
-else:
-    print("Incorrect")
+for question, correct_answer in questions.items():
+    answer = input(question).lower()
+    if answer == correct_answer:
+        print("Correct ✅")
+        score += 1
+    else:
+        print("Incorrect ❌")
 
-answer=input("What RAM stands for? ")
-if answer.lower() =="random access memory":
-    print("Correct")
-    score+=1
-else:
-    print("Incorrect")
+total_questions = len(questions)
+percentage = (score / total_questions) * 100
 
-answer=input("What ROM stands for? ")
-if answer.lower() =="read only memory":
-    print("Correct")
-    score+=1
-else:
-    print("Incorrect")
+print(f"\nYou got {score} out of {total_questions} correct.")
+print(f"Your score: {percentage:.2f}%")
 
-print("total corrects answers is :" +str(score)+" questions")
-print( "you answered "+ str((score/4)*100)+"% "+"correctly")
