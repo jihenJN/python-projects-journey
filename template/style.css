@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing:border-box;
   font-family:Inter,sans-serif;
 }
 .header {
@@ -77,4 +79,28 @@ transform:rotate(6deg);
   transform:scale(1.02);
   transition:all 0.3s ease-out;
   color: #c8c8ca;
+}
+
+.features{
+    background-color: #E8EAF6;
+    padding: 60px 45px;
+}
+
+.features-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2.5rem;
+}
+
+
+.feature-item h3{
+     color:#283593;
+     line-height: 1.8;
+}
+
+.feature-item p{
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
