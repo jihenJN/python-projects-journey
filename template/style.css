@@ -1,10 +1,10 @@
 * {
   margin: 0;
-  font-family: Delius,sans-serif;
+  font-family:Inter,sans-serif;
 }
 .header {
   padding: 10px 45px;
-  background-color: #0066ff;
+  background-color: #283593;
   color: #ffff;
   display: flex;
   justify-content: space-between;
@@ -34,4 +34,41 @@ transform:rotate(6deg);
   margin-left: 20px;
   font-size: 1rem;
   
+}
+
+.hero{
+    background-color: #C5CAE9;
+    display: flex;
+   justify-content: center;
+}
+
+.hero-inner{
+    padding: 60px 45px;
+    max-width: 750px;
+    line-height: 1.6;
+}
+
+.hero h1{
+    font-weight: 500;
+    line-height: 1.8;
+    font-size: 3rem;
+    margin:0;
+}
+
+.button{
+  margin-top: 20px;
+  background-color: #283593;
+  color: #ffff;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+   
+}
+
+.button:hover{
+  background-color: #3F51B5;
+  transform:scale(1.02);
+  transition:all 0.3s ease-out;
+  color: #c8c8ca;
 }
