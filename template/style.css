@@ -50,19 +50,25 @@ transform:rotate(6deg);
 
 .hero h1{
     font-weight: 500;
-    line-height: 1.8;
     font-size: 3rem;
     margin:0;
+}
+
+.hero p{
+    font-size: 1.18rem;
+    line-height: 1.6;
+
 }
 
 .button{
   margin-top: 20px;
   background-color: #283593;
   color: #ffff;
-  padding: 8px 20px;
+  padding: 12px 20px;
   text-decoration: none;
   border-radius: 8px;
   display: inline-block;
+  font-size: 1.18rem;
    
 }
 
